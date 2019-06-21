@@ -1,6 +1,6 @@
 # wiki_fam_tree
 ## Objective: Construct a family tree for persons of interest using Wikipedia 
-This code takes a csv file with names (in this instance, the world leaders list from the Open Sanctions website) and scapes wikipedia to identify relatives. <br> 
+This code takes a csv file with names (in this instance, the world leaders list from the Open Sanctions website) and scrapes wikipedia to identify relatives. (The Wikipedia 'infobox'  does not have a standardised structure across pages) <br> 
 It outputs a new csv file, 'wikipedia_family_tree.csv', with the following columns: 
 <ul> 
 <li> key (person of interest) </li>
