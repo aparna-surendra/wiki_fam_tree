@@ -4,7 +4,7 @@ Data on Sri Lankan state-owned enterprises (SOEs) is surprisingly sparse. As par
 
 The output CSV file has the following columns: 
 <ul> 
-<li> <i>Name</i>: Scraped from respective company's CSE.lk profile </li>
+<li> <i>Name</i>: Name of individual, scraped from respective company's CSE.lk profile </li>
 <li> <i>Role</i>: E.g. Board Member, CEO, Chairperson. </li>
 <li> <i>Notes</i>: Additional detail on role </li> 
 <li> <i>Company_Name</i>: Name of company to look up.  </li> 
