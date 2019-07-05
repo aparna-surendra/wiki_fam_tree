@@ -2,7 +2,7 @@
 ## Sri Lankan state-owned enterprises - scraping management data  
 Regular information on Sri Lankan state-owned enterprises (SOEs) is surprisingly sparse. As part of a project to assist Sri Lankan civil society, this code scrapes publicly-available data (from the Colombo Stock Exchange website) to collect names of SOE management. 
 
-Within the CSE's ToS, web-scraping/automated data collection is considered acceptable for non-commercial purposes. All data collected is publicly-available and non-proprietary. 
+Within the CSE's ToS, web-scraping/automated data collection is acceptable for non-commercial purposes. All data collected is publicly-available and non-proprietary. 
 
 The output CSV file has the following columns: 
 <ul> 
