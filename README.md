@@ -1,20 +1,25 @@
 # wiki_fam_tree
-## Objective: Construct a family tree for persons of interest using Wikipedia 
-This code takes a csv file with names (in this instance, the world leaders list from the Open Sanctions website) and scrapes Wikipedia to identify relatives. (The Wikipedia 'infobox'  does not have a standardised structure across pages). <br> 
-It outputs a new csv file, 'wikipedia_family_tree.csv', with the following columns: 
+## Objective: Collect data on management teams of Sri Lankan state-owned enterprises  
+### Sri Lankan state-owned enterprises - scraping management information from CSE.lk<br> 
+Data on state-owned enterprises (SOEs) is surprisingly sparse. This code scrapes the Colombo Stock Exchange website to collect board of director data for listed SOEs, to assist an SL-based civil-society organisation. The resulting CSV file will feed into a larger project, a database for politically-exposed persons. 
+
+The output CSV file has the following columns: 
 <ul> 
-<li> key (person of interest) </li>
-<li> source (link to source wiki page)</li>
-<li> relationship (first letter represents: 'Spouse', 'Partner', 'Children', 'Parent', 'Relatives','Family')</li> 
-<li> name (of relative) </li> 
-<li> wiki_link (for relative, if available) </li> 
-<li> notes (any additional detail) </li>
+<li> <i>Name</i>: Scraped from respective company's CSE.lk profile </li>
+<li> <i>Role</i>: E.g. Board Member, CEO, Chairperson. </li>
+<li> <i>Notes</i>: Additional detail on role </li> 
+<li> <i>Company_Name</i>: Name of company, as searched for.  </li> 
+<li> <i>CSE_Name</i>: Name of company, as listed on Colombo Stock Exchange. </li> 
+<li> <i>CSE_Symbol</i>: Company symbol, as listed on Colombo Stock Exchange. For each company, the data is scraped from www.cse.lk/home/company-info/CSE_symbol/company-profile. </li>
+<li> <i>Retrieved</i>: Day/Month/Year. Date the data was scraped. </li> 
+<li> <i>Check_Needed</i>: Boolean, True/False. If the Company_Name does not exactly match CSE_Name, this is True. Flags row for an additional manual check. </li> 
 </ul>
+
+This preliminary code serves as a proof-of-concept, and runs on a list of 17 plantation companies to produce 'regional_plantation_companies.csv'. 
 
 TO DO:
 <ul> 
-<li>More robustly extract family information (outside rule-based methods?) </li> 
-<li>Extend to second and third-order relationships and manage duplicates </li> 
-<li>Model family networks e.g. using visualisations </li> 
-<li>This code works for prominent people (e.g. world leaders) - assess whether it extends to less prominent people (whose wiki pages may be differently structured) </li> 
+<li>Clean code (object-oriented; better manage global/local variables) </li> 
+<li>Create a CSV file with names of all SOEs. In this version, I have manually entered the list of company names (and I only have a hard-copy of the 300+ SOEs). Scrape Treasury page? </li> 
+<li>Create a CSV file with all CSE company symbols. Currently, there is no comprehensive list of companies and their correspondng CSE symbol. This code searches the CSE website and identifies the symbol through the auto-complete drop-down menu, which limits fuzzy-matching options. </li> 
 </ul> 
