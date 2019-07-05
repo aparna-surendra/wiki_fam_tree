@@ -1,6 +1,6 @@
 # wiki_fam_tree
 ## Sri Lankan state-owned enterprises - scraping management data  
-Data on Sri Lankan state-owned enterprises (SOEs) is surprisingly sparse. As part of a project to assist a Sri Lankan civil society organisation, this code scrapes management data (from the Colombo Stock Exchange website) to collect names of relevant management. 
+Data on Sri Lankan state-owned enterprises (SOEs) is surprisingly sparse. As part of a project to assist a Sri Lankan civil society organisation, this code scrapes management data (from the Colombo Stock Exchange website) to collect names of management. 
 
 The output CSV file has the following columns: 
 <ul> 
