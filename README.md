@@ -1,6 +1,5 @@
 # wiki_fam_tree
-## Objective: Collect data on management teams of Sri Lankan state-owned enterprises  
-### Sri Lankan state-owned enterprises - scraping management information from CSE.lk<br> 
+## Sri Lankan state-owned enterprises - scraping management information from CSE.lk 
 Data on state-owned enterprises (SOEs) is surprisingly sparse. This code scrapes the Colombo Stock Exchange website to collect board of director data for listed SOEs, to assist an SL-based civil-society organisation. The resulting CSV file will feed into a larger project, a database for politically-exposed persons. 
 
 The output CSV file has the following columns: 
